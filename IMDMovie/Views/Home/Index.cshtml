@@ -1,0 +1,152 @@
+﻿@{
+    ViewData["Title"]="Movies";
+}
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <style>
+            .main-index-navbar
+            {background-color: ;}
+            .h4-line,.movie-btn
+            {font-family: 'Righteous', cursive;}
+            .col-md-1
+            {padding-left:20px;}
+            .row-1,.row-2,.row-3,.row-4,.row-5
+            {margin-bottom: 10px;}
+            </style>
+        </head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3 main-index-navbar">
+        <h4 class="h4-line col-md-8">Top 10 Movies  2019</h2>
+        <button type="button" class="btn btn-default col-md-2 movie-btn btn-sm btn-success" data-toggle="modal" data-target="#myModal">Add Movie</button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <h4 class="modal-title">Add New Movie</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row row-1">
+            <div class="col-md-4"> <h6>Movie Name</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Movie Name" aria-describedby="basic-addon2">
+                     </div>
+                </div>
+        </div>
+        <div class="row row-2">
+            <div class="col-md-4"> <h6>Year of Release</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Year of Release" aria-describedby="basic-addon2">
+                     </div>
+                </div>
+        </div>
+        <div class="row row-3">
+            <div class="col-md-4"> <h6>Plot</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <textarea class="form-control"></textarea>
+                     </div>
+                </div>
+        </div>
+        <div class="row row-4">
+            <div class="col-md-4"> <h6>Poster</h6></div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <input type="file" class="btn btn-primary" id="InputFile">
+                     </div>
+            </div>
+        </div>
+        <div class="row row-5">
+            <div class="col-md-4"> <h6>Cast</h6>
+                </div>
+                <div class="col-md-6">
+                    <select class="form-control">
+                      <option>select..</option>
+                      <option>1</option>
+                     </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ActorModal">+Actor</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    </div>
+           <div class="modal fade" id="ActorModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <h4 class="modal-title">Add Actor</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row row-1">
+            <div class="col-md-4"> <h6>Actor Name</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Movie Name" aria-describedby="basic-addon2">
+                     </div>
+                </div>
+        </div>
+        <div class="row row-2">
+            <div class="col-md-4"> <h6>Sex</h6>
+                </div>
+                <div class="col-md-2">
+                    <div class="input-group">
+                     <input type="radio" aria-describedby="basic-addon2" name="gender" value="male"><label>Male</label>
+                     </div>
+                </div>
+                 <div class="col-md-2">
+                    <div class="input-group">
+                     <input type="radio" aria-describedby="basic-addon2" name="gender" value="female"><label>Female</label>
+                     </div>
+                </div>
+                 <div class="col-md-2">
+                    <div class="input-group">
+                     <input type="radio" aria-describedby="basic-addon2" name="gender" value="others"><label>Others</label>
+                     </div>
+                </div>
+        </div>
+         <div class="row row-2">
+            <div class="col-md-4"> <h6>Date of Birth</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <input type="date" class="form-control" aria-describedby="basic-addon2">
+                     </div>
+                </div>
+        </div>
+        <div class="row row-3">
+            <div class="col-md-4"> <h6>Bio</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                     <textarea class="form-control"></textarea>
+                     </div>
+                </div>
+        </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Done</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    </div>
+</nav>
+</body>
+</html>
+
+
